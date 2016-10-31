@@ -1,0 +1,16 @@
+text/plain
+text/html
+multipart/alternative
+application/octet-stream
+application/zip
+application/x-zip-compressed
+application/x-compressed
+application/vnd.ms-word.document.macroenabled.12
+application/x-compress
+multipart/x-zip
+application/x-zip
+audio/x-wav
+multipart/related
+application/x-rar-compressed
+application/vnd.ms-excel
+application/msword
