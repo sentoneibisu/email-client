@@ -16,14 +16,14 @@ class MailReceiver:
         self.imap_host = "imap.spmode.ne.jp"
         self.imap_port = 993
 
-    def get_attached_files():
+    def get_attached_files(self):
         conn = imaplib.IMAP4_SSL(self.imap_host, self.imap_port)
         conn.login(self.user_id, self.password)
         conn.select()
         typ, data = conn.search(None, 'ALL')
         nums = data[0].split()
         for num in nums:
-            print '[+] %d' % num
+            print '[+] ', num
             typ, data = conn.fetch(num, '(RFC822)')
             raw_data = data[0][1]
             msg = email.message_from_string(raw_data)
